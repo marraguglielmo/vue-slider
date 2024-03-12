@@ -33,7 +33,7 @@
     
                                 <!-- ciclo l'array images e creo i miei carousel item -->
                                 <div v-for="image in images" class="my-carousel-item active">
-                                    <img class="img-fluid" :src="image.url" alt=" picture">
+                                    <img class="img-fluid" :src="image.url" :alt="image.title">
                                     <div class="item-description px-3">
                                         <h2>{{image.title}}</h2>
                                         <p>{{image.description}}</p>
@@ -47,8 +47,8 @@
                                     <span class="my-prev-hook"></span>
                                 </div>
     
-                                <div class="my-thumbnail active">
-                                    <img class="img-fluid" src="http://www.viaggiareonline.it/wp-content/uploads/2014/11/sweden_148857365.jpg" alt="Thumbnail of Svezia picture">
+                                <div v-for="thumb in images" class="my-thumbnail active">
+                                    <img class="img-fluid" :src="thumb.url" :alt="thumb.title">
                                 </div>
     
                                 <!-- next -->
