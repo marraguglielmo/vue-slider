@@ -46,9 +46,12 @@ createApp({
             }else if(this.counter < 0){
                 this.counter = this.images.length - 1;
             }
+        },
+        autoPlay(){
+            setInterval( () => this.nextPrev(), 1000);
         }
     },
     mounted(){
-        
+        this.autoPlay();
     }
 }).mount('#app');
