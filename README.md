@@ -18,3 +18,7 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 5. assegno la classe `active` alla thumb collegando l'indice al contatore
 6. al click dei bottoni `next` e `prev` incremento o decremento il contatore
 7. effettuo dei controlli sul contatore in modo da farlo girare all'infinito
+
+### Svolgimento bonus
+
+1. cliccando su una thumb, rendo l'indice della thumb uguale al contatore, rendendo attiva l'immagine cliccata
