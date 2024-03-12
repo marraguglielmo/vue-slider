@@ -32,8 +32,8 @@ createApp({
                     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam.'
                 },
             ],
-            counter : 0
-
+            counter : 0,
+            isCarouselActive : true
         }
     },
     methods:{
@@ -48,9 +48,14 @@ createApp({
             }
         },
         autoPlay(){
-            setInterval( () => this.nextPrev(true), 1000);
+            setInterval( () => {
+                if(this.isCarouselActive){
+                    this.nextPrev(true);
+                }
+            },1000)
         }
     },
+    
     mounted(){
         this.autoPlay();
     }

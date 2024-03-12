@@ -23,3 +23,5 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 
 1. cliccando su una thumb, rendo il `counter` **uguale** all' `indice` della thumb, rendendo attiva l'immagine cliccata
 2. con un `setInterval` rendo automatico lo scroll ogni 3 secondi, riprendendo la funzione `nextPrev` e passandogli il parametro `true`, ovvero quello per farlo andara avanti
+3. inizializzo una variabile **flag** `isCarouselActive` come `true`, che sta ad indicare che il carousel è in _autoPlay_. Quando vado in `mouseenter`, isCarouselActive diventa false e blocca l'autoplay. Viceversa quando sono in `mouseleave` ritorna true e attiva l'_autoPlay_
+4. Inizializzo la variabile `invert` a `false`, quando faccio doppio click sullo slider diventa `true`, facendo partire il setInterval dello scroll opposto

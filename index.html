@@ -22,13 +22,16 @@
         <main>
             <div class="container-fluid p-5">
                 <h1 class="text-center fw-bold">Ultimo carousel con Vue <i class="fa-regular fa-face-grin-squint"></i></h1>
-                <div class="row text-center">
+                <div class="row text-center" >
                     <div class="col-12 p-3" id="my-before-carousel">
     
                     </div>
     
-                    <div class="col-12 p-5">
-                        <div class="my-carousel-container d-flex flex-column px-5" id="my-carousel">
+                    <div class="col-12 p-5" >
+                        <div class="my-carousel-container d-flex flex-column px-5" id="my-carousel" 
+                        @mouseenter="isCarouselActive = false"
+                        @mouseleave="isCarouselActive = true"
+                        >
                             <div class="my-carousel-images">
     
                                 <!-- ciclo l'array images e creo i miei carousel item -->
