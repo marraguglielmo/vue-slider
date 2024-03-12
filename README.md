@@ -12,8 +12,9 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 ### Svolgimento
 
 1. Inserisco l'array di oggetti contenenti le immagini, il titolo e la descrizione
-2. inizializzo un contatore
+2. inizializzo un `counter`
 3. rendo attiva l'immagine con indice contatore
-4. creo tanti thumb quanto la lunghezza dell'array images
+4. creo tanti `thumb` quanto la lunghezza dell'array images
 5. assegno la classe `active` alla thumb collegando l'indice al contatore
-6. al click dei bottoni next e prev incremento o decremento il contatore
+6. al click dei bottoni `next` e `prev` incremento o decremento il contatore
+7. effettuo dei controlli sul contatore in modo da farlo girare all'infinito
