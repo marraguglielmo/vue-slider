@@ -32,7 +32,7 @@ createApp({
                     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam.'
                 },
             ],
-            counter : 4
+            counter : 0
 
         }
     }

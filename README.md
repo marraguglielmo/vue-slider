@@ -15,3 +15,5 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 2. inizializzo un contatore
 3. rendo attiva l'immagine con indice contatore
 4. creo tanti thumb quanto la lunghezza dell'array images
+5. assegno la classe `active` alla thumb collegando l'indice al contatore
+6. al click dei bottoni next e prev incremento o decremento il contatore
