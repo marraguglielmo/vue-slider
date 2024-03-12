@@ -97,12 +97,12 @@ div#my-carousel .my-thumbnails{
 div#my-carousel .my-thumbnails .my-thumbnail{
     filter: brightness(.4);
     width: calc(100% / 5);
+    transition: filter .5s;
 }
 
 div#my-carousel .my-thumbnails .my-thumbnail:hover{
     cursor: pointer;
     filter: brightness(.5);
-
 }
 
 div#my-carousel .my-thumbnails .my-thumbnail img{
