@@ -21,4 +21,4 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 
 ### Svolgimento bonus
 
-1. cliccando su una thumb, rendo l'indice della thumb uguale al contatore, rendendo attiva l'immagine cliccata
+1. cliccando su una thumb, rendo il `counter` **uguale** all' `indice` della thumb, rendendo attiva l'immagine cliccata
