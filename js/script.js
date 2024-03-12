@@ -33,7 +33,8 @@ createApp({
                 },
             ],
             counter : 0,
-            isCarouselActive : true
+            isCarouselActive : true,
+            invert : false
         }
     },
     methods:{
@@ -49,9 +50,10 @@ createApp({
         },
         autoPlay(){
             setInterval( () => {
-                if(this.isCarouselActive){
+                if(this.isCarouselActive && !this.invert){
                     this.nextPrev(true);
-                }
+                }else if(this.isCarouselActive && this.invert)
+                    this.nextPrev(false);
             },1000)
         }
     },
