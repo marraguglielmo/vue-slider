@@ -38,7 +38,17 @@ createApp({
     },
     methods:{
         nextPrev(isNext){
-            isNext ? counter++ : counter--
+            //se il booleano è true incremento il contatore, se è falso decremento
+            isNext ? this.counter++ : this.counter--;
+            // controllo il contatore per farlo girare all'infinito
+            if(this.counter === this.images.length){
+                this.counter = 0;
+            }else if(this.counter < 0){
+                this.counter = this.images.length - 1;
+            }
         }
+    },
+    mounted(){
+        
     }
 }).mount('#app');
