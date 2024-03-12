@@ -1,9 +1,9 @@
-const {creatApp} = Vue;
+const {createApp} = Vue;
 
-creatApp({
+createApp({
     data(){
         return{
-            images = [
+            images : [
                 {
                     url: 'http://www.viaggiareonline.it/wp-content/uploads/2014/11/sweden_148857365.jpg',
                     title: 'Svezia',
@@ -32,7 +32,8 @@ creatApp({
                     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam.'
                 },
             ],
-            
+            counter : 0
+
         }
     }
 }).mount('#app');
