@@ -22,4 +22,4 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 ### Svolgimento bonus
 
 1. cliccando su una thumb, rendo il `counter` **uguale** all' `indice` della thumb, rendendo attiva l'immagine cliccata
-2. con un `setInterval` rendo automatico lo scroll ogni 3 secondi, riprendendo la funzione `nextPrev`
+2. con un `setInterval` rendo automatico lo scroll ogni 3 secondi, riprendendo la funzione `nextPrev` e passandogli il parametro `true`, ovvero quello per farlo andara avanti

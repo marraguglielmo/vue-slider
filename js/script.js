@@ -48,7 +48,7 @@ createApp({
             }
         },
         autoPlay(){
-            setInterval( () => this.nextPrev(), 1000);
+            setInterval( () => this.nextPrev(true), 1000);
         }
     },
     mounted(){
