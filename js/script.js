@@ -35,5 +35,10 @@ createApp({
             counter : 0
 
         }
+    },
+    methods:{
+        nextPrev(isNext){
+            isNext ? counter++ : counter--
+        }
     }
 }).mount('#app');
